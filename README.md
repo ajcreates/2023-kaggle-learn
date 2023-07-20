@@ -1,7 +1,11 @@
-# GitHub Codespaces ♥️ Jupyter Notebooks
+# Explore Kaggle with Codespaces & Jupyter Notebooks
 
-Welcome to your shiny new codespace! We've got everything fired up and running for you to explore Python and Jupyter notebooks.
+## Learning Objectives
+ - Complete courses on [Kaggle: Learn](https://www.kaggle.com/learn) 
+ - Explore GitHub Codespaces as default development environment
+ - Learn Jupyter Notebook usage as default content format
 
-You've got a blank canvas to work on from a git perspective as well. There's a single initial commit with what you're seeing right now - where you go from here is up to you!
+## Getting Started
 
-Everything you do here is contained within this one codespace. There is no repository on GitHub yet. If and when you’re ready you can click "Publish Branch" and we’ll create your repository and push up your project. If you were just exploring then and have no further need for this code then you can simply delete your codespace and it's gone forever.
+This project was created using the default [GitHub Codespaces ❤️ Jupyter](https://github.com/github/codespaces-jupyter) template which comes with a few default notebooks.
+
