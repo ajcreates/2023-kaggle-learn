@@ -42,3 +42,24 @@ USACO requires contestants to submit programs that run within a certain amount o
 
 Note that Big-O is only an estimate and many USACO Bronze problems have n < 100, leaving much room for error.
 More information can be found at [USACO Guide - Time Complexity](https://usaco.guide/bronze/time-comp?lang=py) 
+
+---
+
+## Rectangle Geometry
+
+Rectangle geometry tasks often deal with coordinate geometry, area, and intersecting shapes. It is always important
+to recognize whether rectangles are in fact parallel to the coordinate axis. Rectangles are usually defined by their top right(**tr**) and bottom left(**bl**) coordinates. From that, we have that:
+* width = **tr_x** - **bl_x**
+* length = **tr_y** - **bl_y**
+* Rectangles *A* and *B* do not intersect if
+    * **tr(A)_y** < **bl(B)_y**
+    * **bl(A)_y** > **tr(B)_y**
+    * **tr(A)_x** < **bl(B)_x**
+    * **bl(A)_x** > **tr(B)_x**
+* If the rectangles *A* and *B* intersect to form a rectangle, then that intersection has
+    * width = min(**tr(A)_x**, **tr(B)_x**) - max(**bl(A)_x**, **bl(B)_x**)
+    * length = min(**tr(A)_y**, **tr(B)_y**) - max(**bl(A)_y**, **bl(B)_y**)
+    * If either of these quantities are non_positive, then *A* and *B* do not intersect
+
+To learn more about Rectangle Geometry, visit [USACO Guide - Rectangle Geometry](https://usaco.guide/bronze/rect-geo?lang=py)
+
