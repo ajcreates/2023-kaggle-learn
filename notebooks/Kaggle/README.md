@@ -63,3 +63,22 @@ to recognize whether rectangles are in fact parallel to the coordinate axis. Rec
 
 To learn more about Rectangle Geometry, visit [USACO Guide - Rectangle Geometry](https://usaco.guide/bronze/rect-geo?lang=py)
 
+---
+
+## Complete Search
+
+USACO problems often require a "brute force" method called **complete search**, where a program iterates throughout an entire solution set, be it integers, combinations, or other objects. In Python, for and while loops are often used to iterate through elements, however, this method can be time-consuming. A technique called recursion is often used, in which certain data structures can be updated after each iteration of a loop, which compiles the results of a complete search within a single data structure, such as a list or dictionary.
+
+# Subsets
+
+Acquiring the subsets of a set of objects is a common task in USACO problems. If a set A has N elements, then it has 2^N subsets, which includes the empty set. In Python, we can use **bitmasks** to represent these subsets. With bitmasks, all integers from 0 to 2^(N-1) are converted to binary, representing all 2^N subsets. A 0 in this binary number shows that the corresponding element in set A is excluded from the subset, while a 1 shows that the element is included. The k-th digit from the right of the binary number is indicative of the inclusion of the k-1 element of set A. For example, the number 7 in binary is *111*, which indicates that the 0th, 1st, and 2nd elements of A are included in the subset. This opens up a whole new set of Python operations known as **bitwise operations**, about which more can be found at [USACO Guide - Intro to Bitwise Operations](https://usaco.guide/silver/intro-bitwise?lang=py)
+
+# Permutations
+
+Permutations are another possible result of complete searches, where objects such as lists, sets, tuples, characters, or numbers are reordered in all possible ways to generate a complete list of orderings. However, computers often take positions into account, rather than distinguishability, which often leads to problems. For example, the list [1,1,1] should only have 1 possible ordering but the computer simply reorganizes the positions of each element to generate 6 orderings that are identical. To remedy this, the **set()** command can be used, which removes such duplicates. It is also good to be familiar with **lexographical order**, a topic which appears often. This is a method of ordering permutations in a similar way that words can be organized alphabetically or numbers in increasing order. To compare two permutations, the first elements are compared and the permutations ordered alphabetically or numerically. If they are the same, the second elements are compared, then if needed the third, and so on. One can achieve this by applying the **sort()** command, but note that ordering N > 10! permutations can exceed time. To return a set of sorted permutations, one can apply the **itertools.permutations()**, sort(), and set() commands.
+
+# Chessboard Problems
+
+A popular set of USACO problems and puzzles in general, deal with the combinations of chess pieces on the board. When we place N chess pieces on the board, we can choose 64_C_N ways to do so, and multiplying this by all possible permutations, taking into account identical pieces. This is a time-consuming strategy that will likely not work, so applying the symmetry of the chessboard and the rules of chess can often cut down on time. Backtracking is another useful strategy, where we store the state of the board inside some variable, make an incremental change to the board, check its viability, and discard failures. The computer stores failed positions and with an optimal counting strategy, can help avoid repeated failure. The symmetry of a chessboard with yield multiple successful positions due to rotations and reflections and we will likely stumble upon one quickly with an optimal strategy.
+
+---
