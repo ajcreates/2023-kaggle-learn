@@ -26,6 +26,30 @@ Booleans - Booleans consist of two statements, either True or False
 
 ---
 
+# Parsing Files
+
+Knowing how to open, read, edit, and close files in Python is essential for USACO problems as both input files and output files are required. 
+[] Opening Files
+Opening files requires the use of the open() command which takes in parameters *File Name* and *Access Mode* and stores the file's contents in a variable. The type of Access Mode allows for variations in the possible operations that can be performed on files. Note that the Python program file and the opened file must be in the same directory to be accessed.
+* Read Only('r') is the default parameter and only opens an existing file for reading line by line(usually a text file)
+* Read and Write('r+') opens existing files for reading and writing
+* Read and Append('a+') creates a file for editing and adds to the end of a file, not the beginning.
+
+[] Closing Files
+Files can be closed with the close() command, which frees memory and is needed to switch access modes.
+
+[] File Operations
+* read(n) allows the entire contents of the file to be outputted and printed if need be, with the optional parameter of adding the exact number of characters to be outputted
+* split() can also be used with files, separating segments of text into a list
+* write() allows a string to be inserted into a file on a new line which also creating new files
+* writelines() inserts multiple strings in a list into a file on separate lines
+
+* **with** statements allow the arduous work of opening, editing, and closing files to be condensed into one or two line of code
+
+
+
+---
+
 # Time Complexity
 
 USACO requires contestants to submit programs that run within a certain amount of time(2 seconds fo C and C++ and 4 seconds for Java and Python). Therefore, it is very important to know relatively how long a program will take to run and if it can be simplified. One way to do this is by noting a program's **Time Complexity**, or the number of operations it takes to run an algorithm. To measure this, **Big-O** notation is used, which takes in a program and outputs a worst-case scenario for complexity.
