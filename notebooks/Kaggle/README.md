@@ -30,13 +30,13 @@ Booleans - Booleans consist of two statements, either True or False
 
 Knowing how to open, read, edit, and close files in Python is essential for USACO problems as both input files and output files are required. 
 [] Opening Files
-Opening files requires the use of the open() command which takes in parameters *File Name* and *Access Mode* and stores the file's contents in a variable. The type of Access Mode allows for variations in the possible operations that can be performed on files. Note that the Python program file and the opened file must be in the same directory to be accessed.
+* Opening files requires the use of the open() command which takes in parameters *File Name* and *Access Mode* and stores the file's contents in a variable. The type of Access Mode allows for variations in the possible operations that can be performed on files. Note that the Python program file and the opened file must be in the same directory to be accessed.
 * Read Only('r') is the default parameter and only opens an existing file for reading line by line(usually a text file)
 * Read and Write('r+') opens existing files for reading and writing
 * Read and Append('a+') creates a file for editing and adds to the end of a file, not the beginning.
 
 [] Closing Files
-Files can be closed with the close() command, which frees memory and is needed to switch access modes.
+* Files can be closed with the close() command, which frees memory and is needed to switch access modes.
 
 [] File Operations
 * read(n) allows the entire contents of the file to be outputted and printed if need be, with the optional parameter of adding the exact number of characters to be outputted
