@@ -175,10 +175,50 @@ Backtracking is another useful strategy, where we store the state of the board i
 </details>
 
 
-## 3.3 Sorting & Sets
+## 3.3 Sorting 
 
-## 3.4 Ad Hoc Problems
+<details>
+<summary>
+Sorting is an essential algorithmic skill when solving problems, it autmatically can reveal duplicate elements and simple iterations as well as simplifying complex arrays.
+</summary>
+<br/>
+Common orders include alphabetical order, numerical order and lexographical order. Python allows
+for the use of the built-in sorting commands **sort()** and **sorted()**, the first of which replaces the old list with a sorted one and the second of which returns a new sorted list. Both have a parameter called *key*, that allows for a specific sorting algorithm to be specified.
 
-## 3.5 Greedy Algorithms
+Most coding languages usse a sorting algorithm called **bubble sort** which takes a list and iterates through consecutive elements, rearranging them in the proper order and repeating this process over and over until the list is sorted. The mistakes the algorithm finds in consecutive elements are called *inversions* and a sorted list has 0 inversions. The time compexity of this is about O(n^2), compared to Python's built-in commands which run at an efficient O(n log n).
 
-## 3.6 Graphs
+Python also provides convenient functions in its **operator** module to deal with common yet more complex types of sorting, utilizing the **itemgetter()**, **attrgetter()**, and **methodcaller()** commands
+</details>
+
+## 3.4 Sets and Maps
+
+<details>
+<summary>
+A set is a group of elements that contain no duplicates, denoted by {} brackets and created with the **set()** command. 
+</summary>
+<br/>
+Sets in Python utilize three major operations:
+
+* `add(x)` adds the element x to a set if not already present
+* `remove(x)` removes the element x from a set if present
+* `x in s` checks whether the set *s* contains the element x
+</details>
+<details>
+<summary>
+A map in Python is called a dictionary (the **dict()** command) and contains elements of the form *key* : *value*, where instead of indices, one can refer to a value by its key. Dictionaries also utilize three major operations
+</summary>
+<br/>
+Suppose we have a dictionary callled *stuff*. Then
+
+* `stuff[x] = y` inserts the key-value pairing x : y into the dictionary
+* `x in stuff` returns whether the key x is in the dictionary
+* `del stuff[x]` deletes the key-value pairing that has key x
+
+Dictionaries also allow for iteration over keys, values, or key-value pairings and allow for changes while iterating. Note that sorting methods can solve most problems requiring them but sets and dictionaries useful properties can simplify this.
+</details>
+
+## 3.5 Ad Hoc Problems
+
+## 3.6 Greedy Algorithms
+
+## 3.7 Graphs
