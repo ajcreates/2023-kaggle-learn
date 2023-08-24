@@ -221,4 +221,9 @@ Dictionaries also allow for iteration over keys, values, or key-value pairings a
 
 ## 3.6 Greedy Algorithms
 
+Greedy algorithms are a method of thinking in which programmers choose the most optimal solution of a set of choices at each individual stage of a problem, thus obtaining the most optimal solution overall. It often features in USACO problems
+dealing with minimum or maximum values. However, this is not a mathematically precise rule, merely an easy way to get started and easy to code. Once we establish the efficiency of a greedy algorithm, we can easily code thrugh it, usually iterating through each choice and chosing correctly.
+
 ## 3.7 Graphs
+
+Graphs in USACO often involve the use of common structures for representing information, such as trees, chains, paths, maps, or cycles. This simplifies a problem, transforming it from a brute force search into one with distinct patterns.
